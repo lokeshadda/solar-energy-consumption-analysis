@@ -1,49 +1,40 @@
 # Solar Energy Consumption Analysis using Machine Learning
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-green)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-orange)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+---
+
 ## Project Overview
 
-This project focuses on analyzing solar energy consumption patterns using Machine Learning techniques. The objective of this project is to preprocess the dataset, perform exploratory data analysis, train multiple machine learning models, and evaluate their performance using various classification metrics.
+This project analyzes solar energy consumption patterns using machine learning techniques to identify predictive trends and evaluate classification performance. The workflow includes data preprocessing, exploratory data analysis, handling imbalanced data using SMOTE, hyperparameter tuning with GridSearchCV, and model evaluation using multiple classification metrics.
 
-The project demonstrates a complete end-to-end machine learning workflow including:
-- Data preprocessing
-- Exploratory Data Analysis (EDA)
-- Handling imbalanced data using SMOTE
-- Hyperparameter tuning using GridSearchCV
-- Model evaluation and comparison
+The project demonstrates an end-to-end machine learning pipeline built using Python and Scikit-learn.
+
+---
+
+## Key Highlights
+
+- Implemented multiple machine learning classification models
+- Applied SMOTE to handle imbalanced data
+- Performed hyperparameter tuning using GridSearchCV
+- Conducted exploratory data analysis and correlation analysis
+- Evaluated model performance using standard classification metrics
+- Built a complete end-to-end machine learning workflow
 
 ---
 
 ## Business Problem
 
-Understanding energy consumption behavior and sustainability-related factors is important for improving renewable energy adoption and optimization. This project uses machine learning models to analyze solar energy consumption data and identify predictive patterns from the dataset.
-
----
-
-## Dataset Information
-
-The dataset used in this project contains solar footprint and energy consumption-related attributes.
-
-### Dataset File
-- `solar_footprints.csv`
-
----
-
-## Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Jupyter Notebook
-- MLflow
+Understanding solar energy consumption and sustainability-related patterns is important for improving renewable energy optimization and decision-making. This project focuses on analyzing solar footprint-related data to identify meaningful relationships and predictive insights using machine learning models.
 
 ---
 
 ## Machine Learning Models Used
 
-The following models were implemented and evaluated:
+The following classification models were implemented and evaluated:
 
 - Logistic Regression
 - K-Nearest Neighbors (KNN)
@@ -53,65 +44,87 @@ The following models were implemented and evaluated:
 
 ---
 
+## Tech Stack
+
+| Category | Tools & Libraries |
+|---|---|
+| Programming Language | Python |
+| Data Processing | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Machine Learning | Scikit-learn |
+| Imbalanced Data Handling | SMOTE |
+| Experiment Tracking | MLflow |
+| Notebook Environment | Jupyter Notebook |
+
+---
+
 ## Project Workflow
 
-### 1. Data Loading
-- Imported and explored the dataset
-- Checked data types and structure
-
-### 2. Data Cleaning & Preprocessing
-- Handled missing values
-- Feature scaling using `StandardScaler`
-- Train-test split preparation
-
-### 3. Handling Imbalanced Data
-- Applied SMOTE (Synthetic Minority Oversampling Technique)
-
-### 4. Exploratory Data Analysis (EDA)
-- Correlation analysis
-- Feature relationship analysis
-- Statistical summaries
-
-### 5. Model Training
-- Implemented multiple machine learning algorithms
-- Used GridSearchCV for hyperparameter tuning
-
-### 6. Model Evaluation
-Models were evaluated using:
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- ROC-AUC Score
-- Confusion Matrix
+1. Data Collection & Loading  
+2. Data Cleaning & Preprocessing  
+3. Exploratory Data Analysis (EDA)  
+4. Handling Imbalanced Data using SMOTE  
+5. Model Training & Hyperparameter Tuning  
+6. Model Evaluation & Performance Analysis  
 
 ---
 
 ## Correlation Heatmap
 
-The correlation heatmap below highlights relationships between important variables in the dataset and helps identify useful patterns for feature analysis and model building.
+The correlation heatmap below highlights relationships between important variables in the dataset and supports feature analysis during the machine learning workflow.
 
 ![Correlation Heatmap](images/correlation_heatmap.png)
 
 ---
 
-## Project Structure
+## Repository Structure
 
 ```text
 solar-energy-consumption-analysis/
 │
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
 ├── data/
 │   └── solar_footprints.csv
+│
+├── images/
+│   └── correlation_heatmap.png
 │
 ├── notebooks/
 │   └── solar_footprint_analysis.ipynb
 │
-└── images/
-    └── correlation_heatmap.png
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+---
+
+## Notebook
+
+Access the complete implementation here:
+
+[Open Jupyter Notebook](notebooks/solar_footprint_analysis.ipynb)
+
+---
+
+## Requirements
+
+Install the required Python libraries using:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Required Libraries
+
+```text
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+imbalanced-learn
+jupyter
+mlflow
 ```
 
 ---
@@ -121,10 +134,10 @@ solar-energy-consumption-analysis/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/solar-energy-consumption-analysis.git
+git clone https://github.com/lokeshadda/solar-energy-consumption-analysis.git
 ```
 
-### Navigate to Project Folder
+### Navigate to Project Directory
 
 ```bash
 cd solar-energy-consumption-analysis
@@ -136,7 +149,7 @@ cd solar-energy-consumption-analysis
 pip install -r requirements.txt
 ```
 
-### Run Jupyter Notebook
+### Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
@@ -144,16 +157,28 @@ jupyter notebook
 
 ---
 
-## Future Improvements
+## Results Summary
+
+- Multiple machine learning models were trained and evaluated
+- Hyperparameter tuning was performed using GridSearchCV
+- SMOTE was applied to address class imbalance
+- Classification performance was evaluated using Accuracy, Precision, Recall, F1-Score, and ROC-AUC metrics
+
+---
+
+## Future Enhancements
 
 - Deploy models using Streamlit or Flask
 - Add advanced feature engineering techniques
-- Perform deeper model comparison and optimization
 - Integrate real-time renewable energy datasets
 - Build interactive dashboards for visualization
+- Implement automated machine learning pipelines
 
 ---
 
 ## Author
 
-Venkata Satya Lokesh Adda
+### Lokesh Adda
+
+Graduate Student in Business Analytics & Information Systems  
+Focused on Data Analytics, Machine Learning, Data Governance, and Business Intelligence.
