@@ -156,14 +156,4 @@ jupyter notebook
 
 ## Author
 
-Lokesh Adda
-
-- Data Analyst
-- Data Quality & Governance Enthusiast
-- Machine Learning & Analytics Learner
-
----
-
-## License
-
-This project is for educational and portfolio purposes.
+Venkata Satya Lokesh Adda
