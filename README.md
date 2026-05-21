@@ -157,14 +157,6 @@ jupyter notebook
 
 ---
 
-## Results Summary
-
-- Multiple machine learning models were trained and evaluated
-- Hyperparameter tuning was performed using GridSearchCV
-- SMOTE was applied to address class imbalance
-- Classification performance was evaluated using Accuracy, Precision, Recall, F1-Score, and ROC-AUC metrics
-
----
 
 ## Model Performance Insights
 
