@@ -166,6 +166,21 @@ jupyter notebook
 
 ---
 
+## Model Performance Insights
+
+Multiple machine learning models were trained and evaluated using classification metrics such as Accuracy, Precision, Recall, F1-Score, and ROC-AUC Score.
+
+Among the evaluated models, the **Random Forest Classifier** demonstrated the strongest overall performance due to its ability to handle complex feature relationships and reduce overfitting through ensemble learning techniques.
+
+Key observations:
+- Random Forest achieved the most balanced classification performance across evaluation metrics
+- SMOTE improved model learning by addressing class imbalance
+- Hyperparameter tuning using GridSearchCV enhanced model optimization
+- Logistic Regression provided strong baseline interpretability
+- MLP and SVC models demonstrated competitive performance but required higher computational complexity
+
+---
+
 ## Future Enhancements
 
 - Deploy models using Streamlit or Flask
